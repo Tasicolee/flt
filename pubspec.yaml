@@ -1,0 +1,133 @@
+name: flutter_deer
+description: ED Pay
+
+version: 1.0.15+15
+
+# 唯鹿 <a05111993@163.com>
+homepage: https://weilu.blog.csdn.net/
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.0.0-0 <4.0.0"
+  flutter: ">=3.7.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # 去除网页URL中的“#”(hash) https://flutter.cn/docs/development/ui/navigation/url-strategies
+  url_strategy: 0.2.0
+  # Localization https://github.com/dart-lang/intl
+  intl: ^0.18.0
+  # Toast插件 https://github.com/OpenFlutter/flutter_oktoast
+  oktoast: ^3.3.2
+  # 网络库 https://github.com/cfug/dio
+  dio: ^5.3.3
+  # https://github.com/ReactiveX/rxdart
+  rxdart: ^0.27.7
+  # Dart 常用工具类库 https://github.com/Sky24n/common_utils
+  common_utils: 2.1.0
+  sp_util: 2.0.3
+  # Flutter 常用工具类库 https://github.com/Sky24n/flustars
+  flustars_flutter3: ^3.0.0 # flustars很久不维护，可以使用这个替代
+  # Flutter 轮播图 https://github.com/mdddj/flutter_swiper_null_safety
+  flutter_swiper_null_safety_flutter3: ^4.0.0   # flutter_swiper很久不维护，可以使用这个替代
+  # 启动URL的插件（支持Web） https://github.com/flutter/packages/tree/main/packages/url_launcher
+  url_launcher: 6.1.8
+  # 图片选择插件 https://github.com/flutter/packages/tree/main/packages/image_picker
+  image_picker: 1.0.4
+  # 侧滑删除 https://github.com/letsar/flutter_slidable
+  flutter_slidable: ^3.0.0
+  # WebView插件 https://github.com/flutter/packages/tree/main/packages/webview_flutter
+  webview_flutter: 4.4.2
+  # 处理键盘事件 https://github.com/diegoveloper/flutter_keyboard_actions
+  keyboard_actions: ^4.2.0
+  # 城市选择列表 https://github.com/flutterchina/azlistview
+  azlistview: ^2.0.0
+  # 路由框架 https://github.com/theyakka/fluro
+  fluro: ^2.0.5
+  # 图片缓存 https://github.com/renefloor/flutter_cached_network_image
+  cached_network_image: ^3.3.0
+  # 格式化String https://github.com/Naddiseo/dart-sprintf
+  sprintf: ^7.0.0
+  # 状态管理 https://github.com/rrousselGit/provider
+  provider: ^6.0.5
+  # 扫码 https://github.com/juliuscanute/qr_code_scanner
+  qr_code_scanner: 1.0.0
+  #    git:
+  #      url: https://github.com/xeinebiu/qr_code_scanner.git
+  #      ref: fix_break_changes_platform
+  # App Shortcuts https://github.com/flutter/packages/tree/main/packages/quick_actions
+  quick_actions: 1.0.5
+  # 振动 https://github.com/benjamindean/flutter_vibration
+  #  vibration: 1.8.1
+  #  vibration_web: 1.6.5
+  # 获取当前设备信息 https://github.com/fluttercommunity/plus_plugins/tree/main/packages/device_info_plus
+  #  device_info_plus: 9.1.0
+  # 桌面应用调整窗口的大小和位置 https://github.com/leanflutter/window_manager
+  window_manager: 0.3.6
+  # 高德2D地图插件（支持Web） https://github.com/simplezhli/flutter_2d_amap
+  #  flutter_2d_amap:
+  #    git:
+  #      ref: '3850a4dc'
+  #      url: 'https://github.com/simplezhli/flutter_2d_amap.git'
+  # demo 用到的库
+  # 刮刮卡 https://github.com/vintage/scratcher
+  scratcher: ^2.4.0
+  # 动画效果 https://github.com/xvrh/lottie-flutter
+  lottie: ^2.6.0
+  qr_flutter: ^4.1.0
+  f_verification_box: ^0.0.1 #验证码6位
+  image_gallery_saver: ^2.0.3  #保存图片到相册
+  permission_handler: ^11.0.1 #获取手机权限
+  qiniu_flutter_sdk: ^0.5.0
+  #  flutter_datetime_picker: ^1.5.1
+  flutter_datetime_picker_plus: ^2.1.0
+  package_info_plus: ^4.2.0
+  scan: ^1.6.0
+  photo_view: ^0.14.0
+  jpush_flutter: 2.3.6 #ios
+  #  jpush_flutter: 2.5.0 #android
+  event_bus: ^2.0.0
+  card_swiper: ^3.0.1
+  flutter_html: ^3.0.0-beta.2
+  gesture_password:
+    git:
+      url: https://github.com/StanleyCocos/gesture_password.git
+  local_auth: ^2.1.7
+
+dependency_overrides:
+  scrollable_positioned_list: ^0.3.2
+
+
+dev_dependencies:
+  # Widget测试
+  flutter_test:
+    sdk: flutter
+  # 集成测试
+  flutter_driver:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  # 黄金测试
+  #  flutter_goldens:
+  #    sdk: flutter
+  # 单元测试
+  test: ^1.16.8
+
+# For information on the generic Dart part of this file, see the
+# following page: https:/w.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  generate: true
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
